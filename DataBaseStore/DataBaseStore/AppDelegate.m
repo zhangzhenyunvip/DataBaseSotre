@@ -26,8 +26,7 @@
     [store putObject:user withId:key intoTable:tableName];
     
     
-    
-    
+
     NSDictionary *queryUser = [store getObjectById:key fromTable:tableName];
     NSLog(@"query data result: %@", queryUser);
     

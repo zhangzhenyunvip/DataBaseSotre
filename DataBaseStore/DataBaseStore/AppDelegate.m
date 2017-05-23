@@ -24,6 +24,10 @@
     NSString *key = @"1";
     NSDictionary *user = @{@"id": @1, @"name": @"tangqiao", @"age": @30};
     [store putObject:user withId:key intoTable:tableName];
+    
+    
+    
+    
     NSDictionary *queryUser = [store getObjectById:key fromTable:tableName];
     NSLog(@"query data result: %@", queryUser);
     
